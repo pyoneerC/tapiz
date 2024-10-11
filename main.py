@@ -43,13 +43,13 @@ def scrape_wine_data():
 
         wines.append({
             "Nombre del Producto": wine_name,
-            "Precio Original": original_price[:-3],
-            "Precio Descontado": current_price[:-3],
-            "Descuento (%)": f"{percentage_difference:.0f}%" if percentage_difference is not None else "N/A",
             "Productor": producer,
             "Variedad": variety,
             "Corte": blend,
             "Tipo": wine_type,
+            "Precio Original": original_price[:-3],
+            "Precio Descontado": current_price[:-3],
+            "Descuento (%)": f"{percentage_difference:.0f}%" if percentage_difference is not None else "N/A",
         })
 
     return wines
