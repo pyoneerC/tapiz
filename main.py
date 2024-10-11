@@ -5,7 +5,7 @@ import pandas as pd
 from datetime import datetime
 
 base_url = "https://www.espaciovino.com.ar/vinos"
-pages = 1 # Each page takes approximately 20 seconds to scrape
+pages = 2 # Each page takes approximately 20 seconds to scrape, max pages is 92.
 max_concurrent_requests = 1000
 
 async def fetch(session, url):
